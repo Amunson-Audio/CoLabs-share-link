@@ -14,6 +14,6 @@ if (urlParams.has('name')) {
 
 if (urlParams.has('host') && urlParams.has('group')) {
     const params = new URLSearchParams({ group: urlParams.get('group') });
-    const url = 'http://' + urlParams.get('host') + '/?' + params.toString();
+    const url = 'colabs://' + urlParams.get('host') + '/?' + params.toString();
     document.getElementById('open-button').href = url;
 }
